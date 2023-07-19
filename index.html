@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <main>
+      <div class="container">
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="#">ТОВАРИ</a>
+              <ul class="categories">
+                <li>
+                  <a class="productList" href="#">Електроніка</a>
+                  <ul class="typeCategory">
+                    <li>
+                      <a href="">Ноутбуки</a>
+                      <ul class="Product">
+                        <li>
+                          <span>Тут повинна бути інформація про товар</span
+                          ><button>Купити</button>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Смартфони</a>
+                      <ul class="Product">
+                        <li>
+                          <span>Тут повинна бути інформація про товар</span
+                          ><button>Купити</button>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="productList" href="#">Одяг</a>
+                  <ul class="typeCategory">
+                    <li>
+                      <a href="">Куртки</a>
+                      <ul class="Product">
+                        <li>
+                          <span>Тут повинна бути інформація про товар</span
+                          ><button>Купити</button>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Взуття</a>
+                      <ul class="Product">
+                        <li>
+                          <span>Тут повинна бути інформація про товар</span
+                          ><button>Купити</button>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="productList" href="#">Книги</a>
+                  <ul class="typeCategory">
+                    <li>
+                      <a href="">Тарас Шевченко</a>
+                      <ul class="Product">
+                        <li>
+                          <span>Тут повинна бути інформація про товар</span
+                          ><button>Купити</button>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Леся Українка</a>
+                      <ul class="Product">
+                        <li>
+                          <span>Тут повинна бути інформація про товар</span
+                          ><button>Купити</button>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <form onsubmit="onFormSubmit(event)">
+          <div class="row">
+            <label for="name">ПІБ</label>
+            <input id="name" name="name" type="text" />
+          </div>
+          <div class="row">
+            <label for="city">Місто:</label>
+            <select name="city" id="city">
+              <option name="odesa" value="odesa">Одеса</option>
+              <option name="kyiv" value="kyiv">Київ</option>
+              <option name="lviv" value="lviv">Львів</option>
+              <option name="kharkiv" value="kharkiv">Харьків</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="novaPoshta">Склад Нової пошти для надсилання</label>
+            <input id="novaPoshta" name="novaPoshta" type="text" />
+          </div>
+          <div class="row">
+            <p>Вид оплати:</p>
+            <label>
+              <input class="radio_one" type="radio" name="radio" value="cash" />
+              Післяплати
+            </label>
+            <label>
+              <input class="radio_two" type="radio" name="radio" value="bank" />
+              Банківська катка
+            </label>
+          </div>
+          <div class="row">
+            <label for="amount">Кількість:</label>
+            <input id="amount" name="amount" type="number" />
+          </div>
+          <div class="row">
+            <label for="info">Коментар:</label>
+            <textarea name="info" id="info"></textarea>
+          </div>
+          <div class="row">
+            <button>OK</button>
+            <button type="reset">Reset</button>
+            <span class="error"></span>
+          </div>
+        </form>
+        <ul class="shopping-list"></ul>
+        <div class="modal-bg" style="display: none">
+          <div class="modal-dialog">
+            <div>Confirm deletion</div>
+            <div class="modal-dialog-text">Are you sure?</div>
+            <div>
+              <button class="yes-btn">Yes</button>
+              <button class="no-btn">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
